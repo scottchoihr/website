@@ -3,9 +3,9 @@ aliases:
 - about-us
 - about-hugo
 - contact
-date: "2019-02-28"
-description: Hugo, the world's fastest framework for building websites
-lastmod: "2020-10-09"
+date: "2022-01-05"
+description: Driving the business across enterprises applying workforce data, using knowledge of HR, data science and analysis, visualization and storytelling. 
+lastmod: "2022-02-05"
 license: CC BY-NC-ND
 menu:
   main:
@@ -15,20 +15,12 @@ menu:
 title: About
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+I am passionate about data science and human capital management. This blog is meant to document my learning journey as I experiment automation, analytics and visualization. Hope you find my contents useful. You can connect with me at [LinkedIn](https://www.linkedin.com/in/choiscott/) 
 
-Hugo makes use of a variety of open source projects including:
+Some of my interest:
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+* Strategic Workforce Planning
+* Predictive/Prescriptive Analytic 
+* R, Python, SQL
+* Automation
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).

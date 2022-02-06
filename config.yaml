@@ -2,7 +2,7 @@ baseurl: "https://hranalytics.netlify.app/"
 languageCode: en-us
 theme: "hugo-theme-stack"
 paginate: 5
-title: Creating a story through data 
+title: Creating a story telling through data
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -39,7 +39,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Driving the organzation 
+        subtitle: 
         avatar:
             enabled: true
             local: true
@@ -108,7 +108,7 @@ params:
         cactus:
             defaultHomeserverUrl: "https://matrix.cactus.chat:8448"
             serverName: "cactus.chat"
-            siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
+            siteName: "HR Analytics" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
             
         giscus:
             repo:
@@ -187,7 +187,7 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/scottchoihr/website
           params:
             icon: brand-github
             

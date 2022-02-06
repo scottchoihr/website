@@ -1,25 +1,42 @@
 ---
-title: "Hello R Markdown"
-author: "Frida Gomam"
+title: "Automating PTO Business Insight Report"
+author: "Scott Choi"
 date: 2020-12-01T21:13:14-05:00
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
+categories: ["R"] 
+tags: ["R Markdown", "Automation", "Tidyverse"]
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
+
+library(readxl)
+library(tidyverse)
+
+MOCK_DATA_2_ <- read_excel("C:/Users/askth/Documents/R/hr_analytics/hr_analytics_blog/hr_blog_analytics/themes/hugo-theme-stack/assets/data/MOCK_DATA (2).xlsx", 
+    col_types = c("text", "text", "text", 
+        "text", "text", "date", "text", "numeric", 
+        "text", "numeric", "text"))
+
 ```
 
-# R Markdown
+# Business Scenario
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+CFO calls upon investigation into PTO balances across the organization after getting the report from finance department of  unprecedented amount of  liability of PTO balances. 
 
-You can embed an R code chunk like this:
+*Data was auto-generated using this [website](https://www.mockaroo.com/) as real company data can't be posted on public domain such as my blog. 
+
+Let's first study and understand the available data. 
 
 ```{r cars}
-summary(cars)
-fit <- lm(dist ~ speed, data = cars)
-fit
+
+
+
+
+
+glimpse(MOCK_DATA_2_)
+
+
+
 ```
 
 # Including Plots
@@ -34,4 +51,15 @@ pie(
   col = c('#0292D8', '#F7EA39', '#C4B632'),
   init.angle = -50, border = NA
 )
+```
+
+
+#### Code block with Hugo's internal highlight shortcode
+
+```diff
+[dependencies.bevy]
+git = "https://github.com/bevyengine/bevy"
+rev = "11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13"
+- features = ["dynamic"]
++ features = ["jpeg", "dynamic"]
 ```

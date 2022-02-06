@@ -1,35 +1,38 @@
 ---
-title: "Hello R Markdown"
-author: "Frida Gomam"
+title: "Automating PTO Business Insight Report"
+author: "Scott Choi"
 date: 2020-12-01T21:13:14-05:00
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
+categories: ["R"] 
+tags: ["R Markdown", "Automation", "Tidyverse"]
 ---
 
 <script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
 
 
-<div id="r-markdown" class="section level1">
-<h1>R Markdown</h1>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932</code></pre>
+<div id="business-scenario" class="section level1">
+<h1>Business Scenario</h1>
+<p>CFO calls upon investigation into PTO balances across the organization after getting the report from finance department of unprecedented amount of liability of PTO balances.</p>
+<p>*Data was auto-generated using this <a href="https://www.mockaroo.com/">website</a> as real company data can’t be posted on public domain such as my blog.</p>
+<p>Let’s first study and understand the available data.</p>
+<pre class="r"><code>
+
+
+
+
+glimpse(MOCK_DATA_2_)
+## Rows: 1,000
+## Columns: 11
+## $ id            &lt;chr&gt; &quot;26-1709563&quot;, &quot;38-8687103&quot;, &quot;01-5889002&quot;, &quot;00-4007554&quot;, ~
+## $ first_name    &lt;chr&gt; &quot;Arlana&quot;, &quot;Leonelle&quot;, &quot;Bart&quot;, &quot;Casi&quot;, &quot;Ilaire&quot;, &quot;Kip&quot;, &quot;~
+## $ last_name     &lt;chr&gt; &quot;Sokill&quot;, &quot;Kittle&quot;, &quot;Puckey&quot;, &quot;Mateja&quot;, &quot;Grebner&quot;, &quot;Back~
+## $ email         &lt;chr&gt; &quot;asokill0@bloglovin.com&quot;, &quot;lkittle1@w3.org&quot;, &quot;bpuckey2@p~
+## $ gender        &lt;chr&gt; &quot;Male&quot;, &quot;Agender&quot;, &quot;Female&quot;, &quot;Male&quot;, &quot;Female&quot;, &quot;Female&quot;,~
+## $ hire_date     &lt;dttm&gt; 2013-12-01, 2010-04-28, 2009-07-31, 2008-02-03, 2008-06~
+## $ job_code      &lt;chr&gt; &quot;Software Test Engineer IV&quot;, &quot;Systems Administrator I&quot;, ~
+## $ exempt        &lt;dbl&gt; 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0,~
+## $ department_id &lt;chr&gt; &quot;20-1986084&quot;, &quot;45-1976485&quot;, &quot;48-3436219&quot;, &quot;65-7974822&quot;, ~
+## $ pto_balance   &lt;dbl&gt; 414, 398, 225, 196, 8, 47, 354, 367, 21, 359, 448, 412, ~
+## $ fte           &lt;chr&gt; &quot;TRUE&quot;, &quot;FALSE&quot;, &quot;FALSE&quot;, &quot;FALSE&quot;, &quot;FALSE&quot;, &quot;TRUE&quot;, &quot;TRU~</code></pre>
 </div>
 <div id="including-plots" class="section level1">
 <h1>Including Plots</h1>
@@ -46,5 +49,13 @@ pie(
 <p class="caption">
 Figure 1: A fancy pie chart.
 </p>
+</div>
+<div id="code-block-with-hugos-internal-highlight-shortcode" class="section level4">
+<h4>Code block with Hugo’s internal highlight shortcode</h4>
+<pre class="diff"><code>[dependencies.bevy]
+git = &quot;https://github.com/bevyengine/bevy&quot;
+rev = &quot;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&quot;
+- features = [&quot;dynamic&quot;]
++ features = [&quot;jpeg&quot;, &quot;dynamic&quot;]</code></pre>
 </div>
 </div>
